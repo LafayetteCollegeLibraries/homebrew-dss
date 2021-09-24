@@ -11,7 +11,7 @@ class CSV2VTT < Formula
     mkdir "build" do
       system "cmake", "../"
       system "cmake", "--build", "."
-
+    end
   end
 
   test do
