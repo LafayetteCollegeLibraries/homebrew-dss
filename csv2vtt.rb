@@ -1,4 +1,4 @@
-class CSV2VTT < Formula
+class Csv2vtt < Formula
   desc "Tool for converting the contents of a CSV into a VTT subtitle file."
   homepage "https://github.com/LafayetteCollegeLibraries/homebrew-dss"
   url "https://github.com/LafayetteCollegeLibraries/webvtt-cli/archive/refs/tags/v0.1.0.tar.gz"
