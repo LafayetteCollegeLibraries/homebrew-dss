@@ -10,7 +10,8 @@ class Csv2vtt < Formula
   def install
     mkdir "build" do
       system "cmake", "../"
-      system "cmake", "--build", "."
+      system "make"
+      system "make", "install"
     end
   end
 
