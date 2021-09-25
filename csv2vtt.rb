@@ -1,8 +1,8 @@
 class Csv2vtt < Formula
   desc "Convert the contents of a CSV into a VTT subtitle file."
   homepage "https://github.com/LafayetteCollegeLibraries/homebrew-dss"
-  url "https://github.com/LafayetteCollegeLibraries/webvtt-cli/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "d4e0c027c929a8706c2e33aefbdcb768115887e4cc456f08aa56eba6438f0971"
+  url "https://github.com/LafayetteCollegeLibraries/webvtt-cli/archive/refs/tags/v1.0.3.tar.gz"
+  sha256 "41180912192ee74604672c2ec6aea9dfd8f88c727a2590832728ee78e37e774e"
   license ""
 
   depends_on "cmake" => :build
@@ -11,7 +11,7 @@ class Csv2vtt < Formula
     mkdir "build" do
       system "cmake", "../"
       system "cmake", "--build", ".", "--config", "Release"
-      system "cmake", "--install", ".", "--config", "Release"
+      system "cmake", "--install", "."
     end
   end
 
