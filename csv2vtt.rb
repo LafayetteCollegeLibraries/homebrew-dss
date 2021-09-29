@@ -11,7 +11,7 @@ class Csv2vtt < Formula
     mkdir "build" do
       system "cmake", "../"
       system "cmake", "--build", ".", "--config", "Release", "--target", "csv2vtt"
-      system "cmake", "--install", "."
+      system "cmake", "--install", ".", "--config", "Release"
     end
   end
 
