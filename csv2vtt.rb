@@ -5,12 +5,8 @@ class Csv2vtt < Formula
   sha256 "7b8e95499df9726793bf964821826a6c2357d1b1fe3123dce6cfc693ec00c154"
   license ""
 
-  depends_on "cmake" => :build
-
   def install
-    mkdir "build" do
-      system "mv", "$USER/Library/Caches/Homebrew/downloads/csv2vtt", "/usr/local/bin"
-    end
+    bin.install 'csv2vtt'
   end
 
   test do
